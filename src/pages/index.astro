@@ -53,7 +53,7 @@ import productMobile from '../images/image-product-mobile.jpg';
 			display: none;
 		}
 
-		@media screen and (max-width: 992px) and (orientation: portrait) {
+		@media screen and (max-width: 800px) and (orientation: portrait) {
 			flex-direction: column;
 			min-width: 90vw;
 			min-height: 90vh;
@@ -77,7 +77,7 @@ import productMobile from '../images/image-product-mobile.jpg';
 		.imageSection {
 			width : 50%;
 
-			@media screen and (max-width: 992px) and (orientation: portrait) {
+			@media screen and (max-width: 800px) and (orientation: portrait) {
 				width : 100%;
 				height : 34%;
 			}
@@ -97,7 +97,7 @@ import productMobile from '../images/image-product-mobile.jpg';
 			justify-content: center;
 			padding-left: 2rem;
 
-			@media screen and (max-width: 992px) and (orientation: portrait) {
+			@media screen and (max-width: 800px) and (orientation: portrait) {
 				width : 100%;
 				height: 64%;
 			}
@@ -109,6 +109,11 @@ import productMobile from '../images/image-product-mobile.jpg';
 				letter-spacing: .4rem;
 				max-width: 85%;
 				font-size: .8rem;
+
+				@media screen and (max-width : 320px) {
+					margin-top : 1rem;
+					font-size: 0.6rem;
+				}
 			}
 
 			h1 {
@@ -116,6 +121,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 				font-weight: 700;
 				max-width: 85%;
 				font-size: 2rem;
+
+				@media screen and (max-width : 320px) {
+					font-size: 1.3rem;
+				}
 			}
 
 			.description {
@@ -123,6 +132,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 				color: var(--Dark-grayish-blue);
 				max-width: 85%;
 				line-height: 1.5rem;
+
+				@media screen and (max-width : 320px) {
+					font-size : .8rem;
+				}
 			}
 
 			button {
@@ -141,6 +154,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 
 				transition: background-color 250ms;
 				will-change: background-color;
+
+				@media screen and (max-width: 992px) and (orientation: portrait) {
+					width : calc(100% - 4rem);
+				}
 			}
 
 			button:hover {
@@ -156,6 +173,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 					color: var(--Dark-cyan);
 					font-size : 2rem;
 					font-weight: 700;
+
+					@media screen and (max-width : 320px) {
+						font-size : 1.5rem;
+					}
 				}
 
 				.price2 {
@@ -164,6 +185,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 					margin-left: 1rem;
 					font-size : 1.2rem;
 					font-weight: 600;
+
+					@media screen and (max-width : 320px) {
+						font-size : 1rem;
+					}
 				}
 			}
 		}
