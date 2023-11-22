@@ -42,6 +42,14 @@ import productMobile from '../images/image-product-mobile.jpg';
 		display: flex;
 		border-radius: 1rem;
 
+		@media screen and (max-width: 992px) and (orientation: portrait) {
+			flex-direction: column;
+			min-width: 90vw;
+			min-height: 90vh;
+			width: 90vw;
+			height: 90vh;
+		}
+
 		.sep {
 			margin-top : .65rem;
 			margin-bottom: .65rem;
@@ -49,6 +57,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 
 		.imageSection {
 			width : 50%;
+
+			@media screen and (max-width: 992px) and (orientation: portrait) {
+				width : 100%;
+			}
 
 			#img {
 				width : 100%;
@@ -64,6 +76,10 @@ import productMobile from '../images/image-product-mobile.jpg';
 			flex-direction: column;
 			justify-content: center;
 			padding-left: 2rem;
+
+			@media screen and (max-width: 992px) and (orientation: portrait) {
+				width : 100%;
+			}
 
 			.category {
 				font-family: 'Montserrat', sans-serif;
