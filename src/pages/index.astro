@@ -1,10 +1,17 @@
 ---
 import Layout from '../layouts/layout.astro';
+import { Image } from 'astro:assets';
+
+import iconCart from '../images/icon-cart.svg';
+import productDesktop from '../images/image-product-desktop.jpg';
+import productMobile from '../images/image-product-mobile.jpg';
 ---
 
 <Layout>
     <main>
-        <section class="imageSection"></section>
+        <section class="imageSection">
+			<Image id="img" src={productDesktop} alt="product image" />
+		</section>
         <section class="textSection">
             <p class="category">PERFUME</p>
             <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -15,8 +22,40 @@ import Layout from '../layouts/layout.astro';
 			<span class="price1">$149.99</span>
 			<span class="price2">$169.99</span>
 			<br />
-			<button>Add to Cart</button>
+			<button>
+				<Image src={iconCart} alt="cart icon" />
+				Add to Cart
+			</button>
         </section>
     </main>
 </Layout>
+
+<style lang="scss">
+	main {
+		min-width: 42rem;
+		min-height: 32rem;
+		max-width: 42rem;
+		max-height: 32rem;
+		background-color: var(--White);
+		display: flex;
+
+		.imageSection {
+			width : 50%;
+
+			#img {
+				width : 100%;
+				height : 100%;
+				object-fit: fill;
+			}
+		}
+
+		.textSection {
+			width : 50%;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+</style>
 
