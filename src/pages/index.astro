@@ -13,18 +13,18 @@ import productMobile from '../images/image-product-mobile.jpg';
 			<Image id="img" src={productDesktop} alt="product image" />
 		</section>
         <section class="textSection">
-            <p class="category">PERFUME</p>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p class="description">
+            <p class="category sep">PERFUME</p>
+            <h1 class="sep">Gabrielle Essence Eau De Parfum</h1>
+            <p class="description sep">
 				A floral, solar and voluptuous interpretation composed by Olivier Polge,
                 Perfumer-Creator for the House of CHANEL.
 			</p>
-			<p class="pricing">
+			<p class="pricing sep">
 				<span class="price1">$149.99</span>
 				<span class="price2">$169.99</span>
 			</p>
 			<br />
-			<button>
+			<button class="sep">
 				<Image src={iconCart} alt="cart icon" />
 				<span>Add to Cart</span>
 			</button>
@@ -41,6 +41,11 @@ import productMobile from '../images/image-product-mobile.jpg';
 		background-color: var(--White);
 		display: flex;
 		border-radius: 1rem;
+
+		.sep {
+			margin-top : .65rem;
+			margin-bottom: .65rem;
+		}
 
 		.imageSection {
 			width : 50%;
@@ -95,6 +100,7 @@ import productMobile from '../images/image-product-mobile.jpg';
 				align-items: center;
 				gap: 1rem;
 				cursor: pointer;
+				border: none;
 
 				transition: background-color 250ms;
 				will-change: background-color;
