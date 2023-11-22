@@ -26,7 +26,7 @@ import productMobile from '../images/image-product-mobile.jpg';
 			<br />
 			<button>
 				<Image src={iconCart} alt="cart icon" />
-				Add to Cart
+				<span>Add to Cart</span>
 			</button>
         </section>
     </main>
@@ -57,7 +57,7 @@ import productMobile from '../images/image-product-mobile.jpg';
 
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
+			justify-content: center;
 			padding-left: 2rem;
 
 			.category {
@@ -81,6 +81,27 @@ import productMobile from '../images/image-product-mobile.jpg';
 				color: var(--Dark-grayish-blue);
 				max-width: 85%;
 				line-height: 1.5rem;
+			}
+
+			button {
+				width : calc(100% - 2rem);
+				background-color: var(--Dark-cyan);
+				color : var(--White);
+				font-family: 'Outfit', sans-serif;
+				border-radius: .5rem;
+				padding : 1rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
+				cursor: pointer;
+
+				transition: background-color 250ms;
+				will-change: background-color;
+			}
+
+			button:hover {
+				background-color: var(--Very-dark-blue);
 			}
 
 			.pricing {
